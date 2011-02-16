@@ -35,22 +35,23 @@ A few notes to follow when creating a project in AVRStudio.
        - Click ok to close the dialog
 
   *This step is only done once*
-     - Make sure upload.bat is moved from the Project name directory and placed at the AVRStudio projects
-       root directory
+     - Make sure upload.bat is moved from the Project name directory and placed at the AVRStudio 
+       projects root directory
      - Click on Tools -> Customize
        - Choose the Tools tab
        - Under Menu Context click the new folder and add "Download via AVRdude"
        - In the command line browse to the base directory for all of your AVRStudio projects.
          For example I use B:/Atmel Projects/
-         The file extension filter should be changed to *.bat to see the file and the location should 
-         be the AVRStudio root directory.  Choose the file named upload.bat
+         The file extension filter should be changed to *.bat to see the file and the location 
+         should be the AVRStudio root directory.  Choose the file named upload.bat
        - The initial directory should be the same AVRStudio root directory
        - There are 2 parameters for this batch file.
            **The first is the COM port that the Arduino is on your machine (eg. 15 or 2)
-           **The second is the file name that is to be downloaded.  You need work from the initial directory as 
-             change above.  If you project is in folder Test which is stored at the root directory of Atmel Projects
-             then your argument would be Test\output\test.hex for parameter 2.  the parameter line would look
-             something like - 19 Test\output\test.hex where ( <COM #> <project folder\output\project name.hex> )
+           **The second is the file name that is to be downloaded.  You need work from the initial 
+             directory as change above.  If you project is in folder Test which is stored at the 
+             root directory of Atmel Projects then your argument would be Test\output\test.hex for 
+             parameter 2.  the parameter line would look something like - 19 Test\output\test.hex 
+             where ( <COM #> <project folder\output\project name.hex> )
        - Click close and exit the dialog.
 
 
